@@ -1,0 +1,15 @@
+# orchestration/deployment.yaml
+deployments:
+  - name: unified-fraud-detection
+    entrypoint: orchestration/unified_pipeline.py:unified_fraud_detection_pipeline
+    parameters: {}
+    schedule:
+      cron: "0 2 * * *"  # Daily at 2 AM
+    tags: ["fraud-detection", "production"]
+    
+  - name: monitoring-only
+    entrypoint: orchestration/unified_pipeline.py:monitoring_only_pipeline  
+    parameters: {}
+    schedule:
+      cron: "0 */6 * * *"  # Every 6 hours
+    tags: ["monitoring", "production"]

@@ -1,0 +1,61 @@
+2025-11-03 16:21:19,846 - INFO - ======================================================================
+2025-11-03 16:21:20,174 - INFO - ======================================================================
+2025-11-03 16:25:43,615 - INFO - ======================================================================
+2025-11-03 16:25:43,623 - INFO - ======================================================================
+2025-11-03 16:25:43,628 - INFO -    - CV AUC: 0.97658
+2025-11-03 16:25:43,628 - INFO -    - Test AUC: 0.96708
+2025-11-03 16:25:43,628 - INFO -    - Precision: 0.91667
+2025-11-03 16:25:43,628 - INFO -    - Recall: 0.73333
+2025-11-03 16:25:43,628 - INFO -    - F1-Score: 0.81481
+2025-11-03 16:25:43,648 - INFO - ======================================================================
+2025-11-04 12:01:21,869 - INFO - ======================================================================
+2025-11-04 12:01:23,553 - INFO - UNIFIED FRAUD DETECTION PIPELINE
+2025-11-04 12:01:23,559 - INFO - MLflow + Evidently + MySQL + Grafana
+2025-11-04 12:01:23,559 - INFO - ======================================================================
+2025-11-04 12:01:24,482 - INFO - Loading data from: C:\Users\user\Documents\fraud_dtc_mlops\data\features
+2025-11-04 12:01:36,766 - INFO - SUCCESS - Loaded X_train: (226980, 30), y_train: (226980,)
+2025-11-04 12:01:36,767 - INFO - SUCCESS - Loaded X_test: (56746, 30), y_test: (56746,)
+2025-11-04 12:01:36,768 - INFO - Starting 5-fold Cross-Validation...
+2025-11-04 12:01:38,916 - INFO - Run ID: 1311e1166cf94aac91a98b9e0f97040f
+2025-11-04 12:01:39,110 - INFO - Processing Fold 1/5
+2025-11-04 12:02:21,997 - INFO - SUCCESS - Fold 1 AUC: 0.98463
+2025-11-04 12:02:22,016 - INFO - Processing Fold 2/5
+2025-11-04 12:02:47,170 - INFO - SUCCESS - Fold 2 AUC: 0.98254
+2025-11-04 12:02:47,186 - INFO - Processing Fold 3/5
+2025-11-04 12:03:07,123 - INFO - SUCCESS - Fold 3 AUC: 0.98820
+2025-11-04 12:03:07,139 - INFO - Processing Fold 4/5
+2025-11-04 12:03:21,788 - INFO - SUCCESS - Fold 4 AUC: 0.98918
+2025-11-04 12:03:21,803 - INFO - Processing Fold 5/5
+2025-11-04 12:03:35,338 - INFO - SUCCESS - Fold 5 AUC: 0.94788
+2025-11-04 12:03:35,512 - INFO - SUCCESS - Overall CV AUC: 0.97658
+2025-11-04 12:05:22,600 - INFO - SUCCESS - Registered: FraudDetector v8
+2025-11-04 12:05:22,614 - INFO - Evaluating model on test data...
+2025-11-04 12:05:25,527 - INFO - SUCCESS - Test ROC-AUC: 0.96708
+2025-11-04 12:05:25,527 - INFO - SUCCESS - Precision: 0.91667
+2025-11-04 12:05:25,527 - INFO - SUCCESS - Recall: 0.73333
+2025-11-04 12:05:25,527 - INFO - SUCCESS - F1-Score: 0.81481
+2025-11-04 12:05:25,941 - INFO - Running Data Drift Analysis...
+2025-11-04 12:05:25,983 - INFO - Using sample size 5000 for drift analysis
+2025-11-04 12:05:29,050 - INFO - Data Drift Detected (train vs test): False
+2025-11-04 12:05:29,050 - INFO - Logging to Monitoring Database...
+2025-11-04 12:05:38,936 - INFO - SUCCESS - Database connected
+2025-11-04 12:05:39,545 - INFO - SUCCESS - Logged to model_performance table
+2025-11-04 12:05:39,638 - INFO - SUCCESS - Logged to data_drift table
+2025-11-04 12:05:39,638 - INFO - Generating Monitoring Report...
+2025-11-04 12:05:39,641 - INFO - SUCCESS - Monitoring report saved: monitoring\monitoring_report_20251104_120539.json
+2025-11-04 12:05:39,641 - INFO - ======================================================================
+2025-11-04 12:05:39,641 - INFO - SUCCESS - UNIFIED PIPELINE COMPLETED!
+2025-11-04 12:05:39,641 - INFO - ======================================================================
+2025-11-04 12:05:39,641 - INFO - MODEL PERFORMANCE:
+2025-11-04 12:05:39,641 - INFO -   - CV AUC: 0.97658
+2025-11-04 12:05:39,641 - INFO -   - Test AUC: 0.96708
+2025-11-04 12:05:39,641 - INFO -   - Precision: 0.91667
+2025-11-04 12:05:39,641 - INFO -   - Recall: 0.73333
+2025-11-04 12:05:39,645 - INFO -   - F1-Score: 0.81481
+2025-11-04 12:05:39,645 - INFO - DATA DRIFT: Not Detected
+2025-11-04 12:05:39,645 - INFO - DATABASE LOGGING: Success
+2025-11-04 12:05:39,646 - INFO - MLFLOW RUN ID: 1311e1166cf94aac91a98b9e0f97040f
+2025-11-04 12:05:39,646 - INFO - MONITORING REPORT: monitoring\monitoring_report_20251104_120539.json
+2025-11-04 12:05:39,646 - INFO - EXECUTION TIME: 256.08 seconds
+2025-11-04 12:05:39,648 - INFO - MLFLOW UI: mlflow ui --port 5000
+2025-11-04 12:05:39,648 - INFO - ======================================================================

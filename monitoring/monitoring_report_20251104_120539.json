@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-04T12:05:39.638898",
+  "model_run_id": "1311e1166cf94aac91a98b9e0f97040f",
+  "performance_metrics": {
+    "auc": 0.9670830195487778,
+    "precision": 0.9166666666666666,
+    "recall": 0.7333333333333333,
+    "f1": 0.8148148148148148
+  },
+  "data_drift": {
+    "detected": false,
+    "analysis_type": "train_vs_test"
+  },
+  "execution_time_seconds": 256.0792307853699,
+  "pipeline_status": "completed",
+  "next_steps": [
+    "Check MLflow UI for detailed experiment tracking",
+    "Monitor database tables for ongoing metrics",
+    "Set up Grafana dashboard for visualization",
+    "Schedule regular monitoring runs"
+  ]
+}

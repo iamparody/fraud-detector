@@ -1,0 +1,21 @@
+postgres:
+  host: "localhost"
+  port: 5432
+  db: "fraud_monitoring"
+  user: "monitor_user"
+  password: "monitor_pass"
+
+mlflow:
+  tracking_uri: "http://localhost:5000"
+  experiment_name: "FraudDetector-Monitoring"
+
+alerts:
+  slack_webhook: ""   # fill if you want Slack alerts
+  email: ""           # fill if you want email alerts
+
+thresholds:
+  data_drift_score: 0.30
+  model_auc_drop: 0.05
+
+schedule:
+  interval_hours: 24
